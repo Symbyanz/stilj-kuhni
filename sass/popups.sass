@@ -1,0 +1,468 @@
+@keyframes animate_btn
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(30deg)
+
+.quick_call
+	position: fixed
+	z-index: 10
+	display: block
+	bottom: 40px
+	right: 100px
+	.question
+		margin-right: 20px
+		display: inline-block
+		background: rgba(0,0,0, 0.65)
+		padding: 10px
+		&:hover
+			cursor: pointer
+		&:after
+			content: ''
+			position: absolute
+			right: 45px
+			bottom: 20px
+			border: 10px solid transparent
+			transform: rotate(270deg)
+			border-top: 10px solid rgba(0,0,0, 0.65)
+		.small
+			font-size: 14px
+			color: #fff
+	.circle
+		display: inline-block
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		background: #D40404 url('../img/icons/white/phone.png') center no-repeat
+		border: #D40404 solid 10px
+		box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+		background-size: cover
+		animation-name: animate_btn
+		animation-duration: 1.2s
+		animation-iteration-count: infinite
+		animation-direction: alternate
+		animation-timing-function: ease-in-out
+		&:hover
+			cursor: pointer
+
+
+.popup2
+	z-index: 12
+	display: block
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 100%
+	.form_box
+		position: absolute
+		bottom: 120px
+		right: 80px
+		form
+			width: 360px
+			background: #fff
+			padding: 30px
+			box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+			p
+				text-align: center
+				line-height: 1.35
+				font-size: 24px
+				font-weight: 300
+				margin-bottom: 10px
+				b
+					font-weight: 500
+			.little
+				margin-top: 20px
+				margin-bottom: 6px
+				font-size: 18px
+			.btn
+				margin-top: 10px
+				width: 100%
+				height: 52px
+				padding: 0
+				border-color: rgb(177, 1, 6)
+				background: rgb(177, 1, 6)				
+			.small
+				margin-top: 20px
+				font-size: 15px
+				a
+					color: #D40404
+					text-decoration: underline
+	.circle2
+		position: absolute
+		display: inline-block
+		width: 60px
+		height: 60px
+		bottom: 40px
+		right: 85px
+		border-radius: 50%
+		display: inline-block
+		z-index: 13
+		box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+		background-size: cover
+		border: #fff solid 10px
+		background: #fff url('../img/icons/black/close.png') center no-repeat
+		&:hover
+			cursor: pointer
+
+.popup
+	z-index: 12
+	display: block
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	.box_shadow
+		position: absolute
+		z-index: 11
+		background: rgba(0,0,0, 0.7)
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	.close
+		position: absolute
+		z-index: 13
+		top: 15px
+		right: 15px
+		width: 40px
+		height: 40px
+		border: none
+		background: url('../img/icons/white/close2.png') center no-repeat
+		background-size: cover
+		text-decoration: none
+		border: none
+		&:hover
+			cursor: pointer
+	.popup_box
+		position: absolute
+		left: 0
+		width: 100%
+		z-index: 12
+		margin-top: 10vh
+		background: #fff
+		padding: 30px 40px
+		h2
+			font-size: 32px
+			line-height: 1.15
+			margin-bottom: 5px
+		p
+			font-weight: 300
+			text-align: center
+			font-size: 20px
+			line-height: 1.55
+			margin-bottom: 20px
+		.little
+			margin-bottom: 5px
+			font-size: 18px
+			text-align: left
+		.form_input
+			border: none
+			background: #EBEDF0
+			min-height: 58px
+			margin-bottom: 30px
+		.btn
+			background: #D40404
+			width: 100%
+			height: 56px
+			padding: 15px
+		.small
+			margin-top: 20px
+			font-size: 15px
+			a
+				color: #D40404
+				text-decoration: underline
+
+#popup_quiz 
+	.popup_box
+		margin: 5vh auto
+		padding: 0
+		max-height: 90vh
+		overflow-y: scroll
+		.top
+			background: #ececec
+			// height: 90px
+			padding: 30px
+			h3
+				font-size: 20px
+				font-weight: 300
+				padding-left: 40px
+				span
+					float: right
+					text-align: right
+					font-weight: 500
+				&::before
+					content: ""
+					position: absolute
+					width: 30px
+					height: 30px
+					top: 30px
+					left: 28px
+					background: url('../img/icons/red/lists.png') center no-repeat
+					background-size: cover
+			&-end
+				display: none
+				background: #ececec
+				height: auto
+				padding: 30px
+		.line
+			width: 100%
+			height: 5px
+			background-color: #cbcbcb
+			transform: translate3d(0,0,0)
+			.quiz_progress2
+				background-color: rgb(255, 0, 0)
+				height: 100%
+				width: 2%
+		#quiz_one
+			display: block
+			padding: 40px
+			h2
+				text-align: left
+				font-size: 24px
+				font-weight: 400
+				margin-bottom: 20px
+			.data
+				width: 100%
+				margin-bottom: 40px
+				.item
+					position: relative
+					display: inline-block
+					width: 224px
+					height: 224px
+					margin: 5px
+					span
+						position: absolute
+						top: -10px
+						right: -10px
+						width: 30px
+						height: 30px
+						background: #000 url('../img/icons/white/gal.png') center no-repeat
+						background-size: 60%
+						border-radius: 50%
+						box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+					.btn-kitchen
+						display: inline-block
+						width: 100%
+						height: 100%
+						box-shadow: 0 0 5px rgba(0,0,0, 0.5)
+						border: none
+						border-radius: 5px						
+					&:nth-child(1) .btn-kitchen
+							background: url('../img/squiz/quiz_one/1kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(2) .btn-kitchen
+							background: url('../img/squiz/quiz_one/2kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(3) .btn-kitchen
+							background: url('../img/squiz/quiz_one/3kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(4) .btn-kitchen
+							background: url('../img/squiz/quiz_one/4kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(5) .btn-kitchen
+							background: url('../img/squiz/quiz_one/5kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(6) .btn-kitchen
+							background: url('../img/squiz/quiz_one/6kit.jpg') center no-repeat
+							background-size: cover
+					p
+						text-align: left
+						font-size: 16px
+						font-weight: 400
+						margin: 3px 5px 5px
+		#quiz_two
+			display: none
+			padding: 40px
+			h2
+				text-align: left
+				font-size: 24px
+				font-weight: 400
+				margin-bottom: 20px
+			.data
+				width: 100%
+				margin-bottom: 40px
+				.item
+					position: relative
+					display: inline-block
+					width: 224px
+					height: 224px
+					margin: 5px
+					span
+						position: absolute
+						top: -10px
+						right: -10px
+						width: 30px
+						height: 30px
+						background: #000 url('../img/icons/white/gal.png') center no-repeat
+						background-size: 60%
+						border-radius: 50%
+						box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+					.btn-kitchen
+						display: inline-block
+						width: 100%
+						height: 100%
+						box-shadow: 0 0 5px rgba(0,0,0, 0.5)
+						border: none
+						border-radius: 5px						
+					&:nth-child(1) .btn-kitchen
+							background: url('../img/squiz/quiz_two/1kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(2) .btn-kitchen
+							background: url('../img/squiz/quiz_two/2kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(3) .btn-kitchen
+							background: url('../img/squiz/quiz_two/3kit.jpg') center no-repeat
+							background-size: cover
+					&:nth-child(4) .btn-kitchen
+							background: url('../img/squiz/quiz_two/4kit.jpg') center no-repeat
+							background-size: cover
+					p
+						text-align: left
+						font-size: 16px
+						font-weight: 400
+						margin: 3px 5px 5px
+		#quiz_three
+			display: none
+			padding: 40px
+			h2
+				text-align: left
+				font-size: 24px
+				font-weight: 400
+				margin-bottom: 20px
+			input
+				padding-left: 0
+				background: #fff
+				color: #000
+				font-weight: 300
+				font-size: 16px
+				border-bottom: solid 1px #aaa
+				margin-bottom: 120px
+			.controls
+				.next-btn
+					text-align: center
+					width: 160px
+					padding-right: 0
+					&::before
+						display: none
+		#quiz_four
+			display: none
+			padding: 40px
+			h2
+				text-align: left
+				font-size: 24px
+				font-weight: 400
+				margin-bottom: 20px
+			.controls
+				.next-btn
+					text-align: center
+					width: 160px
+					padding-right: 0
+					&::before
+						display: none
+			.form_input
+				margin-bottom: 80px
+	.controls
+		height: 44px
+		padding-bottom: 40px
+		.btn
+			position: relative
+			width: 120px
+			height: 46px
+			min-height: 46px
+			font-size: 14px
+			padding: 15px 0
+			margin-bottom: 20px
+		.prev-btn
+			background-color: #ccc
+			border-color: #ccc
+			color: #fff
+			float: left
+			text-align: left
+			padding-left: 50px
+			&::before
+				content: ""
+				position: absolute
+				width: 20px
+				height: 20px
+				left: 15px
+				top: 12.5px
+				background: url('../img/icons/white/aroow.png') center no-repeat
+				transform: rotate(180deg)
+				background-size: cover
+		.next-btn
+			float: right
+			text-align: right
+			padding-right: 50px
+			&::before
+				content: ""
+				position: absolute
+				width: 20px
+				height: 20px
+				right: 15px
+				top: 12.5px
+				background: url('../img/icons/white/aroow.png') center no-repeat
+				background-size: cover
+		.btn-active:hover
+			background-color: #D40404
+			border-color: #D40404
+			color: #fff
+
+@media (max-width:1200px)
+	#popup_quiz
+		.popup_box
+			#quiz_one .data .item, #quiz_two .data .item
+				width: 183.4px
+				height: 183.4px
+
+@media (max-width:992px)
+	#popup_quiz
+		.popup_box
+			#quiz_one .data .item, #quiz_two .data .item
+				width: 126px
+				height: 126px
+			#quiz_one .data .item p, #quiz_two .data .item p
+				font-size: 13px
+
+@media (max-width:768px)
+	#popup_quiz
+		.popup_box
+			margin: 10vh auto 5vh
+			max-height: 85vh
+			#quiz_one .data .item, #quiz_two .data .item
+				width: 135.5px
+				height: 135.5px
+	.popup
+		.popup_box
+			h2
+				font-size: 24px
+			p
+				font-size: 18px
+			.btn, .form_input
+				height: 44px
+				min-height: 44px
+				font-size: 14px
+				margin-bottom: 20px
+			.little
+				font-size: 14px
+
+@media (max-width:596px)
+	#popup_quiz
+		.popup_box
+			.btn-kitchen 
+				margin-bottom: 0
+			#quiz_one .data .item, #quiz_two .data .item
+				width: 44%
+				height: 180px
+				margin: 2.2%
+
+@media (max-width:480px)
+	#popup_quiz 
+		.popup_box 
+			.top h3
+				font-size: 16px
+			#quiz_one, #quiz_two, #quiz_three, #quiz_four, 
+				padding: 5px
+			#quiz_one .data .item, #quiz_two .data .item
+				height: 120px

@@ -1,0 +1,95 @@
+.slick-active
+	outline: none
+
+.slick-dots li button:before
+	font-size: 8px
+
+.slick-prev, .slick-next
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background: #E8E8E8 url('../img/icons/black/arrow.png') center no-repeat
+	background-size: cover
+	top: calc(50% - 25px)
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+
+.slick-prev
+	left: -70px
+
+.slick-prev
+	top: 50%
+
+.slick-next
+	right: -70px
+	top: calc(50% - 25px)
+	transform: rotate(180deg)
+
+.slick-prev:hover, .slick-prev:focus
+	background: #E8E8E8 url('../img/icons/black/arrow.png') center no-repeat
+	background-size: cover	
+
+.slick-next:hover, .slick-next:focus
+	background: #E8E8E8 url('../img/icons/black/arrow.png') center no-repeat
+	background-size: cover	
+	transform: rotate(180deg)
+
+.slick-next:before, .slick-prev:before
+	content: ""
+
+@media (max-width:596px)
+	.slick-prev, .slick-next
+		width: 25px
+		height: 25px
+		top: calc(50% - 12.5px)
+	.slick-prev
+		left: -35px
+		top: 50%
+	.slick-next
+		right: -35px
+
+@media (max-width:480px)
+	.slick-prev
+		left: 2px
+		z-index: 2
+	.slick-next
+		right: 2px
+	.slick-slide
+		p
+			display: inline-block
+			padding: 0 10%
+
+button:active, button:focus
+	outline: none
+
+body,html
+	padding: 0
+	margin: 0
+	font-family: 'TT Norms'
+	font-weight: 500
+
+h1,h2,h3,h4,h5, p
+	margin: 0
+a
+	color: #000
+	text-decoration: none
+
+button:active, button:focus
+	outline: none !important
+
+img
+	max-width: 100%
+
+select
+	margin: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-appearance: none
+	-moz-appearance: none
+
+.desk
+	display: block
+.mob
+	display: none
+
+
